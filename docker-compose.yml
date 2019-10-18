@@ -56,6 +56,6 @@ services:
         max-file: "5"
         max-size: "10m"
         
- networks:
-   comms:
-     external: true
+networks:
+  comms:
+    external: true

@@ -54,7 +54,10 @@ services:
       options:
         max-file: "5"
         max-size: "10m"
-        
+    deploy:
+      restart_policy:
+        condition: any
+
 networks:
   comms:
     external: true

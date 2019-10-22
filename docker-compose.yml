@@ -49,6 +49,8 @@ services:
     stop_signal: SIGUSR2
     environment:
       CONCOURSE_TSA_HOST: web:2222
+      CONCOURSE_BAGGAGECLAIM_DRIVER: overlay
+      CONCOURSE_LOG_LEVEL: debug
     logging:
       driver: "json-file"
       options:

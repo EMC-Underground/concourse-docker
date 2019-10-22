@@ -50,6 +50,7 @@ services:
     environment:
       CONCOURSE_TSA_HOST: web:2222
       CONCOURSE_BAGGAGECLAIM_DRIVER: ${STORAGE_DRIVER}
+      CONCOURSE_LOG_LEVEL: debug
     logging:
       driver: "json-file"
       options:

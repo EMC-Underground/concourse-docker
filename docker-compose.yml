@@ -14,7 +14,7 @@ services:
         max-size: "10m"
 
   web:
-    image: concourse/concourse
+    image: concourse/concourse:5.6
     command: web
     networks:
       - comms
@@ -40,7 +40,7 @@ services:
         max-size: "10m"
 
   worker:
-    image: concourse/concourse
+    image: concourse/concourse:5.6
     command: worker
     privileged: true
     depends_on: [web]

@@ -14,7 +14,7 @@ services:
         max-size: "10m"
 
   web:
-    image: concourse/concourse:5.8
+    image: concourse/concourse:5.8.1-ubuntu
     command: web
     networks:
       - comms
@@ -40,7 +40,7 @@ services:
         max-size: "10m"
 
   worker:
-    image: concourse/concourse:5.8
+    image: concourse/concourse:5.8.1-ubuntu
     command: worker
     privileged: true
     depends_on: [web]
